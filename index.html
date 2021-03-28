@@ -26,6 +26,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
 
     <!--CSS파일과 JS파일 연결-->
     <link rel="stylesheet" href="style.css" />
@@ -66,53 +71,55 @@
     </section>
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About me</h1>
-      <p>
-        어렸을때 게임을 하기위해 컴퓨터 앞에서 보낸 시간들을 돌이켜 봤을때
+      <p class="about__comments">
+        어렸을 때 게임을 하기 위해 컴퓨터 앞에서 보낸 시간들을 돌이켜 봤을 때
         컴퓨터 앞에서의 시간은 너무나도 빠르고 재밌게 흘러갔음을 느꼈습니다.
-        25살 겨울을 앞둔 시기에 남들과 비슷하게 안정적인일을 해야할지 없는 꿈을
-        찾아야 할지 고민이 많았습니다.이왕이면 내가 어렸을때 느낀 시간가는줄
-        모르며 재밌게 했던 게임처럼 몰두할수 있는 일이면 좋겠다 싶었습니다.
-        고민이 깊어지던중 친구의 추천으로 컴퓨터 앞에서 하는일이라면 몰두할
-        자신이 있지 않을까 하고 개발공부를 시작했습니다. 처음에는 유튜브를 보며
-        마크업언어를 공부를 했는데 밥먹을때나 중간중간 공부를 하지 않을때도
-        생각이 나는걸 보고 이거다 하고 확신을 했던거 같습니다. 그렇게 공부를
-        하다 국비지원을 해주는 학원이 있다는 정보를 찾고 2020년 11월부터
-        국비지원학원 자바백엔드 수업과정을 들었습니다. 학원과정중 팀원들과
-        웹페이지 제작 프로젝트를 진행하였는데 프론트엔드의 직관적인 변화에
-        흥미를 느끼고 만들어진 웹페이지의 틀을 보았을때 많은 뿌듯함을 느꼈고
-        프론트엔드에 많은 관심이 생겼습니다. 프론트엔드 개발자가 되기위해 현재는
-        혼자서 고군분투하며 공부하고있는 이선우라고 합니다.
+        25살 겨울을 앞둔 시기에 남들과 비슷하게 안정적인 일을 해야 할지 없는
+        꿈을 찾아야 할지 고민이 많았습니다. 이왕이면 내가 어렸을 때 느낀 시간
+        가는 줄 모르며 재밌게 했던 게임처럼 몰두할 수 있는 일이면 좋겠다
+        싶었습니다. 고민이 깊어지던 중 친구의 추천으로 컴퓨터 앞에서 하는
+        일이라면 몰두할 자신이 있지 않을까 하고 개발 공부를 시작했습니다.
+        처음에는 유튜브를 보며 마크업 언어를 공부를 했는데 밥 먹을 때나 중간중간
+        공부를 하지 않을 때도 생각이 나는 걸 보고 이거 다 하고 확신을 했던 거
+        같습니다. 그렇게 공부를 하다 국비지원을 해주는 학원이 있다는 정보를 찾고
+        2020년 11월부터 국비지원 학원 자바 백엔드 수업과정을 들었습니다. 수업을
+        들으며 팀원들과 진행한 팀프로젝트를 하면서 직관적으로 변화를 확인할 수
+        있는 프론트엔드 부분에 관심이 크게 가고 재미를 느꼈습니다. 이후 학원을
+        수료하고 프론트엔드 개발자로 취업을 하기위해 혼자서 고군분투하며
+        공부하는 이선우라고 합니다.
       </p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-html5"></i>
           </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">HTML,CSS,JavaScript</div>
+          <h2 class="major__title">Front-end</h2>
+          <p class="major__description">HTML,CSS,JavaScript</p>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fas fa-chalkboard-teacher"></i>
           </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">HTML,CSS,JavaScript</div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">Java,MySQL,Spring<br />Apache Tomcat</p>
         </div>
-        <div class="about__jobs">
-          <div class="job">
-            <img src="imgs/logo.gif" alt="theJoeun" class="job__logo" />
-            <p class="job_name">더조은IT아카데미 자바(Java)웹 개발자 과정</p>
-            <p class="job_period">2020 November ~ 2021 March</p>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="imgs/logo.gif" alt="theJoeun" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">더조은IT아카데미 자바(Java)웹 개발자 과정</p>
+            <p class="job__period">2020 November ~ 2021 March</p>
           </div>
-          <div class="job"></div>
         </div>
+        <div class="job"></div>
       </div>
     </section>
 
     <!-- skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -191,7 +198,7 @@
     </section>
 
     <!-- work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
@@ -215,7 +222,7 @@
       </div>
     </section>
     <!-- testimonaials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h2>See what they say about me</h2>
       <div class="testimonials">
@@ -245,7 +252,7 @@
     </section>
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">sunwoo866@naver.com</h2>
       <div class="contact__links">
