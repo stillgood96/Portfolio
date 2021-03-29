@@ -89,6 +89,7 @@ button {
 }
 /* Navbar */
 #navbar {
+  min-width: 500px;
   position: fixed;
   width: 100%;
   display: flex;
@@ -103,7 +104,8 @@ button {
 
 #navbar.navbar--dark {
   background-color: var(--color-orange);
-  padding: 0px;
+  color: var(--color-white);
+  padding: 18px;
 }
 
 .navbar__menu {
@@ -112,6 +114,7 @@ button {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
+  color: var(--color-darkOrange);
 }
 .navbar__menu__item {
   padding: 8px 12px;
@@ -131,7 +134,7 @@ button {
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
-  top: 20px;
+  top: 22px;
   display: none;
 }
 
@@ -405,15 +408,15 @@ button {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
   content: "";
   display: block;
-  width: 25px;
+  width: 100px;
   height: 2px;
-  margin-left: -15px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: white;
   position: relative;
@@ -498,6 +501,10 @@ button {
 
   #navbar {
     flex-direction: column;
+    background-color: var(--color-orange);
+  }
+
+  #navbar.navbar__logo {
     align-items: flex-start;
   }
 
@@ -506,6 +513,12 @@ button {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+    margin: auto;
+    align-items: center;
   }
 
   .about__majors {
