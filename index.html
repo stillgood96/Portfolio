@@ -39,26 +39,28 @@
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fas fa-fire-alt"></i>
-        <a href="#">imlsw96</a>
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <i class="fas fa-fire-alt"></i>
+          <a href="#">imlsw96</a>
+        </div>
+        <div class="navbar_menu">
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item" data-link="#certificate">
+              Certificate
+            </li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+          </ul>
+        </div>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <div class="navbar_menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active" data-link="#home">Home</li>
-          <li class="navbar__menu__item" data-link="#about">About</li>
-          <li class="navbar__menu__item" data-link="#skills">Skills</li>
-          <li class="navbar__menu__item" data-link="#work">My work</li>
-          <li class="navbar__menu__item" data-link="#certificate">
-            Certificate
-          </li>
-          <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
-      </div>
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
-      </button>
     </nav>
 
     <!-- Home -->
@@ -81,7 +83,7 @@
     <!-- about -->
     <section id="about" class="section">
       <div class="section__container">
-        <h1>About me</h1>
+        <h1 class="margin">About me</h1>
         <p class="about__comments">
           어렸을 때 게임을 하기 위해 컴퓨터 앞에서 보낸 시간들을 돌이켜 봤을 때
           컴퓨터 앞에서의 시간은 너무나도 빠르고 재밌게 흘러갔음을 느꼈습니다.
@@ -131,9 +133,9 @@
     </section>
 
     <!-- skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="section margin">
       <div class="section__container">
-        <h1>Skills</h1>
+        <h1 class="margin">Skills</h1>
         <h2>Skills & Attributes</h2>
         <p class="skills__comments">
           Java, HTML, CSS, JavaScript, Jquery, bootstrap, Spring, MySQL, Apache,
@@ -212,8 +214,8 @@
     </section>
 
     <!-- work -->
-    <section id="work" class="section">
-      <h1>My work</h1>
+    <section id="work" class="section margin">
+      <h1 class="margin">My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
@@ -288,8 +290,8 @@
       </div>
     </section>
     <!-- Certificate -->
-    <section id="certificate" class="section">
-      <h1>Certificate</h1>
+    <section id="certificate" class="section margin">
+      <h1 class="margin">Certificate</h1>
       <div class="certificates section__container">
         <img src="imgs/IMG_4437.JPG" alt="" class="certificate__img" />
         <img src="imgs/IMG_4438.JPG" alt="" class="certificate__img" />
@@ -298,7 +300,7 @@
 
     <!-- contact -->
     <section id="contact" class="section">
-      <img src="imgs/favicon.png" alt="" class="contact__img" />
+      <img src="imgs/favicon.png" alt="" class="contact__img margin" />
       <h2 class="contact__email">sunwoo866@naver.com</h2>
       <div class="contact__links">
         <a href="https://github.com/stillgood96" target="_blank">
