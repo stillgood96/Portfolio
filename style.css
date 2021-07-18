@@ -39,7 +39,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   cursor: default;
-  min-width: 500px;
+  width: 100vw;
 }
 
 a {
@@ -93,9 +93,8 @@ button {
 }
 /* Navbar */
 #navbar {
-  min-width: 500px;
-  position: fixed;
   width: 100vw;
+  position: fixed;
   color: var(--color-white);
   padding: 18px;
   transition: all var(--animation-duration) ease-in-out;
@@ -153,11 +152,16 @@ button {
 /* Home */
 
 #home {
+  width: 100%;
   background: url("imgs/Brown\ and\ Red\ Simple\ Trees\ Jazz\ YouTube\ Channel\ Art.png")
     center/cover no-repeat;
   padding: 40px;
   padding-top: 200px;
   text-align: center;
+}
+
+.home__container {
+  width: 100%;
 }
 
 .home__avatar {
@@ -248,7 +252,7 @@ button {
 
 .job {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .two {
@@ -288,6 +292,7 @@ button {
 /* Skill */
 
 #skills {
+  width: 100%;
   background-color: var(--color-yellow);
 }
 
@@ -478,6 +483,7 @@ button {
 
 /* Contact */
 #contact {
+  width: 100%;
   background-color: var(--color-orange);
 }
 
@@ -528,22 +534,21 @@ button {
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .body {
-    width: 100vw;
+    width: 100%;
   }
   .section {
-    width: 100vw;
+    width: 100%;
+    padding: 16px;
   }
 
   .navbar__toggle-btn {
     display: block;
   }
-  .section {
-    padding: 16px;
-  }
 
   #navbar {
     background-color: var(--color-orange);
     width: 100%;
+    position: relative;
   }
 
   .navbar__container {
@@ -583,8 +588,8 @@ button {
   .about__jobs {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
   }
   .two {
     display: flex;
