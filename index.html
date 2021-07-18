@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <title>Sunwoo's Portfolio</title>
     <meta
       name="description"
@@ -72,10 +75,10 @@
           class="home__avatar"
           style="width: 300px; height: 300px"
         />
-        <h1 class="home__title">Hello,<br />I'm Lee Sun Woo</h1>
-        <h2 class="home__description">
-          Dreaming of becoming a front-end developer.
+        <h2 class="home__description home__title">
+          프론트엔드 개발자가 되고 싶은
         </h2>
+        <h2 class="home__title">이선우 입니다.</h2>
         <button class="home__contact" data-link="#contact">Contact Me</button>
       </div>
     </section>
@@ -127,7 +130,17 @@
               <p class="job__period">2020 November ~ 2021 March</p>
             </div>
           </div>
-          <div class="job"></div>
+          <div class="job two">
+            <img
+              src="imgs/image-removebg-preview.png"
+              alt="정보처리기능사"
+              class="job__certificate"
+            />
+            <div class="job__description">
+              <p class="job__name">정보처리 기능사 취득</p>
+              <p class="job__period">2021 April ~ 2021 July</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -151,28 +164,28 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>99%</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
+                <div class="skill__value" style="width: 80%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>CSS</span>
-                <span>90%</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
+                <div class="skill__value" style="width: 80%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>JavaScript</span>
-                <span>90%</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
+                <div class="skill__value" style="width: 80%"></div>
               </div>
             </div>
             <div class="skill">
@@ -187,10 +200,10 @@
             <div class="skill">
               <div class="skill__description">
                 <span>React</span>
-                <span>50%</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 50%"></div>
+                <div class="skill__value" style="width: 70%"></div>
               </div>
             </div>
           </div>
@@ -219,72 +232,102 @@
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All <span class="category__count">8</span>
+          All <span class="category__count">4</span>
         </button>
-        <button class="category__btn" data-filter="front-end">
-          Front-end <span class="category__count">5</span>
+        <button class="category__btn" data-filter="spring">
+          Spring <span class="category__count">1</span>
         </button>
 
-        <button class="category__btn" data-filter="back-end">
-          Back-end <span class="category__count">3</span>
+        <button class="category__btn" data-filter="react">
+          React <span class="category__count">3</span>
         </button>
       </div>
 
       <div class="work__projects section__container">
-        <a href="" class="project" target="blank" data-type="front-end">
-          <img src="imgs/projects/project1.png" alt="" class="project__img" />
+        <a
+          href="https://github.com/stillgood96/WishketProject/tree/main"
+          class="project"
+          target="blank"
+          data-type="spring"
+        >
+          <img src="imgs/projects/wishket.png" alt="" class="project__img" />
           <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
+            <h3>WishKet 홈페이지 클론코딩</h3>
+            <span
+              >학원에서 진행한 팀프로젝트 입니다.(Spring, Java, AWS EC2,RDS,
+              TomCat)</span
+            >
           </div>
         </a>
-        <a href="" class="project" target="blank" data-type="front-end">
-          <img src="imgs/projects/project2.png" alt="" class="project__img" />
+        <a
+          href="https://github.com/stillgood96/CatchCarrots"
+          class="project"
+          target="blank"
+          data-type="front-end"
+        >
+          <img
+            src="imgs/projects/catchcarrot.png"
+            alt=""
+            class="project__img"
+          />
           <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
+            <h3>미니게임</h3>
+            <span>JavaScript를 활용한 미니게임</span>
           </div>
         </a>
-        <a href="" class="project" target="blank" data-type="front-end">
-          <img src="imgs/projects/project3.png" alt="" class="project__img" />
+        <a
+          href="https://github.com/stillgood96/Habit-Tracker"
+          class="project"
+          target="blank"
+          data-type="react"
+        >
+          <img
+            src="imgs/projects/habit_tracker.png"
+            alt=""
+            class="project__img"
+          />
           <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
+            <h3>Habit-tracker</h3>
+            <span>리액트를 이용한 습관기록 웹</span>
           </div>
         </a>
-        <a href="" class="project" target="blank" data-type="front-end">
-          <img src="imgs/projects/project4.png" alt="" class="project__img" />
+        <a
+          href="https://github.com/stillgood96/Sunwoo-Tube/"
+          class="project"
+          target="blank"
+          data-type="react"
+        >
+          <img src="imgs/projects/suntube.png" alt="" class="project__img" />
           <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
+            <h3>SunTube.</h3>
+            <span>Youtube API를 활용한 리액트 웹</span>
           </div>
         </a>
-        <a href="" class="project" target="blank" data-type="front-end">
-          <img src="imgs/projects/project5.png" alt="" class="project__img" />
+        <a
+          href="https://github.com/stillgood96/Card-Maker"
+          class="project"
+          target="blank"
+          data-type="react"
+        >
+          <img src="imgs/projects/cardmaker.png" alt="" class="project__img" />
           <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
+            <h3>Business CardMaker</h3>
+            <span>firdbase를 이용한 리액트, 라우팅 웹</span>
           </div>
         </a>
-        <a href="" class="project" target="blank" data-type="back-end">
-          <img src="imgs/projects/project6.png" alt="" class="project__img" />
+        <a
+          href="https://github.com/stillgood96/Convenience-store-task-list"
+          class="project"
+          target="blank"
+          data-type="react"
+        >
+          <img src="imgs/projects/cu.png" alt="" class="project__img" />
           <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank" data-type="back-end">
-          <img src="imgs/projects/project7.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank" data-type="back-end">
-          <img src="imgs/projects/project8.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>미완성입니다.</h3>
-            <span>Clone Coding with Html and crossorigin</span>
+            <h3>편의점 업무 인수인계 리스트(미완성)</h3>
+            <span
+              >편의점을 관두면서 후임근무자에게 인수인계 하기위해 만들어본
+              웹</span
+            >
           </div>
         </a>
       </div>
